@@ -7,9 +7,11 @@ def read(fname):
     """ Return content of specified file """
     return open(os.path.join(os.path.dirname(__file__), fname)).read()
 
+VERSION = bottle_utils.__version__
+
 setup(
     name = 'bottle-utils-http',
-    version = bottle_utils.__version__,
+    version = VERSION,
     author = 'Outernet Inc',
     author_email = 'branko@outernet.is',
     description = ('HTTP utilities for developing apps with Bottle web '
